@@ -1,0 +1,121 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 0.5em 0;
+    z-index: 1000;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list li a:hover {
+    color: #f0a500;
+  }
+  
+  /* Layout Container */
+  .container {
+    display: flex;
+    flex: 1;
+    margin-top: 70px; /* Space for the fixed navbar */
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left Menu */
+  .left-menu {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .menu-items {
+    margin-top: 10px;
+  }
+  
+  .menu-items li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-items li a:hover {
+    color: #007bff;
+  }
+  
+  /* Toggle Button */
+  .toggle-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
